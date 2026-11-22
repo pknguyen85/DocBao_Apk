@@ -1,0 +1,27 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'vn.baoto.doc'
+    compileSdk 35
+
+    defaultConfig {
+        applicationId 'vn.baoto.doc'
+        minSdk 26
+        targetSdk 34      // 34 de tranh che do tran vien (edge-to-edge) bat buoc cua Android 15
+        versionCode 1
+        versionName '1.0'
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+}
